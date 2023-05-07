@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Book Tickets</h1>
+        <a href="index.html"><button id="home" type="button" class="home button">Home</button></a>
+        <a href="available.html"><button id="avail" type="button" class="avail button">Now Showing</button></a>
+    </header>
+    <div class="contains">
+        <div>
+            <h2>Select your movie & your seat</h2>
+            <form>
+                <select>
+				    <option value="">--Select a movie--</option>
+				    <option value="movie1">Dhoni: The Untold Story</option>
+			    	<option value="movie2">Pathaan</option>
+                    <option value="movie3">3 Idiots</option>
+                    <option value="movie4">Jersey</option>
+			    	<option value="movie5">Chhichhore</option>
+			    </select>
+			<table>
+				<tr>
+					<td class="available"><input type="checkbox" id="seat1" name="seat1" value="seat1" >
+                        <label for="seat1">Seat 1</label></td>
+					<td class="booked"><input type="checkbox" id="seat2" name="seat2" value="seat2" disabled >
+                        <label for="seat2">Seat 2</label></td>
+					<td class="available"><input type="checkbox" id="seat3" name="seat3" value="seat3" >
+                        <label for="seat3">Seat 3</label></td>
+					<td class="booked"><input type="checkbox" id="seat4" name="seat4" value="seat4" disabled >
+                        <label for="seat4">Seat 4</label></td>
+                    <td class="available"><input type="checkbox" id="seat5" name="seat5" value="seat5" >
+                        <label for="seat5">Seat 5</label></td>
+					<td class="available"><input type="checkbox" id="seat6" name="seat6" value="seat6" >
+                        <label for="seat6">Seat 6</label></td>
+				</tr>
+				<tr>
+					<td class="booked"><input type="checkbox" id="seat7" name="seat7" value="seat7" disabled>
+                        <label for="seat7">Seat 7</label></td>
+					<td class="available"><input type="checkbox" id="seat8" name="seat8" value="seat8" >
+                        <label for="seat8">Seat 8</label></td>
+                    <td class="booked"><input type="checkbox" id="seat9" name="seat9" value="seat9" disabled>
+                        <label for="seat9">Seat 9</label></td>
+					<td class="available"><input type="checkbox" id="seat10" name="seat10" value="seat10" >
+                        <label for="seat10">Seat 10</label></td>
+					<td class="available"><input type="checkbox" id="seat11" name="seat11" value="seat11" >
+                        <label for="seat11">Seat 11</label></td>
+                    <td class="booked"><input type="checkbox" id="seat12" name="seat12" value="seat12" disabled >
+                        <label for="seat12">Seat 12</label></td>
+				</tr>
+            </table>
+            <button type="submit" class="button">Book now</button>
+            <button type="reset" class="button">Reset</button>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; Movie Ticket Booking Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
